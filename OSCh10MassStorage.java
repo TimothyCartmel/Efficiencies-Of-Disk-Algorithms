@@ -166,6 +166,7 @@ static int CSCAN(int cyclinderReq[], int startCyl){
     int r = 1000;
     System.arraycopy(cyclinderReq, 0, tempCyclinderReq, 0, 1000);
     Arrays.sort(tempCyclinderReq);
+	//Find the position to start
     for(int i = 0; i < 1000; i++){
         if(tempCyclinderReq[i] >= startCyl){
             r = i;
